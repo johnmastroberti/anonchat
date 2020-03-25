@@ -21,3 +21,6 @@ obj/main.o: main.cpp include/a.hpp
 obj/%.o: src/%.cpp include/%.hpp
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
+clean:
+	-rm obj/*.o
+	-rm app
